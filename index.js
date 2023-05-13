@@ -42,7 +42,7 @@ const server = http.createServer(app);
 const port1 = 3001 || process.env.PORT;
 const io = new Server(server, {
     cors: {
-        origin: "https://bespoke-bunny-2f6678.netlify.app",
+        origin: ["https://bespoke-bunny-2f6678.netlify.app","http://localhost:3000"],
         methods: ['GET', 'POST'],
     }
 })
